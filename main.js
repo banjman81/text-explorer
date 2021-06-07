@@ -88,6 +88,19 @@ function location(a,b){
         console.log("You see a long trail that cuts into the grassland.")
     }
 }
+// location pictures
+const goal = `%c
+,---,---,---,---,---,---,---,---,---,---,---,---,---,-------,
+| ~ | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 | [ | ] | <-    |
+|---'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-----|
+| ->| | " | , | . | P | Y | F | G | C | R | L | / | = |  \  |
+|-----',--',--',--',--',--',--',--',--',--',--',--',--'-----|
+| Caps | A | O | E | U | I | D | H | T | N | S | - |  Enter |
+|------'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'--------|
+|        | ; | Q | J | K | X | B | M | W | V | Z |          |
+|------,-',--'--,'---'---'---'---'---'---'-,-'---',--,------|
+| ctrl |  | alt |                          | alt  |  | ctrl |
+'------'  '-----'--------------------------'------'  '------'`;
 
 // location(x,y);
 while(check == false){
@@ -117,18 +130,6 @@ while(check == false){
     }
     else{
         console.log('You cannot go there.');
-        // if(x > 2){
-        //     x =2;
-        // }
-        // else if(x < -2){
-        //     x = -2;
-        // }
-        // else if(y > 2){
-        //     y =2;
-        // }
-        // else if(y < -2){
-        //     y = -2;
-        // }
     }
     location(x,y);
     console.log(x,y)
@@ -139,3 +140,4 @@ while(check == false){
 }
 
 console.log("Congradulation you have found the golden keyboard!!")
+console.log(goal)
